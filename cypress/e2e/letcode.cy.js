@@ -17,4 +17,11 @@ describe('user sign up & login flow', () =>{
         cy.get("[name='password']").type("Dinesh@123");
         cy.xpath("//button[text()='LOGIN']").click();
     })
+    it('Inupt section' , () =>{
+        cy.visit("https://letcode.in/test");
+        cy.xpath("//a[text()='Edit']").click();
+        cy.get("#fullName").type("Dinesh Kolati");
+        cy.get("#join").clear().type("Done");
+        cy.get("#getMe").type("HIIII");
+    })
 })
