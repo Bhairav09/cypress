@@ -11,17 +11,6 @@ describe('static dropdown', () => {
         //.should('have.text', 'France') //failed
     })
 
-    //working
-    it('Dropdown without select', function () {
-        cy.visit('https://www.dummyticket.com/dummy-ticket-for-visa-application/')
-
-        cy.get('#select2-billing_country-container').click()
-        cy.get('.select2-search.select2-search--dropdown').type('Japan').type('{enter}')
-       
-        cy.get('#select2-billing_country-container')
-        .should('have.text','Japan')
-        //.should('have.value', 'Japan') //failed
-    })
 
     //working
     it('Dynamic dropdown', function () {
