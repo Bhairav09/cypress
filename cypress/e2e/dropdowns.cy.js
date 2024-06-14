@@ -12,7 +12,7 @@ describe('static dropdown', () => {
     })
 
     //working
-    it.skip('Dropdown without select', function () {
+    it('Dropdown without select', function () {
         cy.visit('https://www.dummyticket.com/dummy-ticket-for-visa-application/')
 
         cy.get('#select2-billing_country-container').click()
@@ -31,7 +31,7 @@ describe('static dropdown', () => {
     })
 
     //not working
-    it.skip('Dynamic dropdown', function () {
+    it('Dynamic dropdown', function () {
         cy.visit('https://www.google.com/')
         cy.get("input[name='q']").type('cypress automation');
         cy.wait(3000)
