@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="6.853" tests="4" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-06-17T11:17:23" tests="0" file="cypress\e2e\webtable.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Handle Tables" timestamp="2024-06-17T11:17:23" tests="4" time="6.847" failures="1">
+    <testcase name="Handle Tables &quot;before each&quot; hook: Login for &quot;Check Number Rows &amp; Columns&quot;" time="0.000" classname="&quot;before each&quot; hook: Login for &quot;Check Number Rows &amp; Columns&quot;">
+      <failure message="The following error originated from your application code, not from Cypress.
+
+  &gt; $.plot is not a function
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Handle Tables`" type="TypeError"><![CDATA[TypeError: The following error originated from your application code, not from Cypress.
+
+  > $.plot is not a function
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Handle Tables`
+    at Object.success (https://demo.opencart.com/admin/index.php?route=common/dashboard&user_token=6c00c5e23503e75cb0f7b08406f784a2:459:15)
+    at c (https://demo.opencart.com/admin/view/javascript/jquery/jquery-3.6.0.min.js:2:28327)
+    at Object.fireWith [as resolveWith] (https://demo.opencart.com/admin/view/javascript/jquery/jquery-3.6.0.min.js:2:29072)
+    at l (https://demo.opencart.com/admin/view/javascript/jquery/jquery-3.6.0.min.js:2:79901)
+    at XMLHttpRequest.<anonymous> (https://demo.opencart.com/admin/view/javascript/jquery/jquery-3.6.0.min.js:2:82355)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

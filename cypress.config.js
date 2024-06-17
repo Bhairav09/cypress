@@ -19,17 +19,19 @@ module.exports = {
     json: true
   }
 }
+
+
+// cypress.config.js
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+
 module.exports = {
-  reporter: 'mochawesome',
+  reporter: 'junit',
   reporterOptions: {
-    reportDir: 'cypress/reports/mochawesome',
-    overwrite: false,
-    html: true,
-    json: true
+    mochaFile: 'cypress/reports/junit/results-[hash].xml'
   },
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      allureWriter(on, config);
       return config;
     }
   }

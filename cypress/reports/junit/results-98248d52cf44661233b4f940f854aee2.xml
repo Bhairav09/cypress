@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="17.366" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-06-17T11:25:29" tests="0" file="cypress\e2e\mytest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="My First Test" timestamp="2024-06-17T11:25:29" tests="2" time="9.690" failures="0">
+    <testcase name="My First Test test1" time="2.386" classname="test1">
+    </testcase>
+    <testcase name="My First Test test2" time="1.421" classname="test2">
+    </testcase>
+  </testsuite>
+  <testsuite name="My Second Test" timestamp="2024-06-17T11:25:39" tests="2" time="7.671" failures="0">
+    <testcase name="My Second Test test3" time="2.868" classname="test3">
+    </testcase>
+    <testcase name="My Second Test test4" time="2.729" classname="test4">
+    </testcase>
+  </testsuite>
+</testsuites>

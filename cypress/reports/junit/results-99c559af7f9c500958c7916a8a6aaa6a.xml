@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="3.617" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-06-17T11:24:56" tests="0" file="cypress\e2e\cssselectors.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Css Selector" timestamp="2024-06-17T11:24:56" tests="1" time="3.613" failures="0">
+    <testcase name="Css Selector css" time="2.154" classname="css">
+    </testcase>
+  </testsuite>
+</testsuites>

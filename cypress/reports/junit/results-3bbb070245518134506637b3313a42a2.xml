@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="16.314" tests="4" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-06-17T11:25:54" tests="0" file="cypress\e2e\webtable.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Handle Tables" timestamp="2024-06-17T11:25:54" tests="4" time="16.308" failures="1">
+    <testcase name="Handle Tables Check Number Rows &amp; Columns" time="4.279" classname="Check Number Rows &amp; Columns">
+    </testcase>
+    <testcase name="Handle Tables Check cell data from specific row &amp; Column" time="2.490" classname="Check cell data from specific row &amp; Column">
+    </testcase>
+    <testcase name="Handle Tables Read all the rows &amp; Columns data in the first page" time="1.935" classname="Read all the rows &amp; Columns data in the first page">
+    </testcase>
+    <testcase name="Handle Tables &quot;before each&quot; hook: Login for &quot;Pagination&quot;" time="0.000" classname="&quot;before each&quot; hook: Login for &quot;Pagination&quot;">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `//a[text()=&apos; Customers&apos;]`, but never found it.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Handle Tables`" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `//a[text()=' Customers']`, but never found it.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Handle Tables`
+    at Context.eval (webpack://cypressautomation/./cypress/e2e/webtable.cy.js:13:11)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
