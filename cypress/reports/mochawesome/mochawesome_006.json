@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-17T10:23:48.369Z",
+    "end": "2024-06-17T10:23:56.795Z",
+    "duration": 8426,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "697c8e86-a73b-44db-b1e7-623f4a6fb9de",
+      "title": "",
+      "fullFile": "cypress\\e2e\\letcode.cy.js",
+      "file": "cypress\\e2e\\letcode.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c643e530-2c52-469b-9c20-c5684cf4e9ad",
+          "title": "user sign up & login flow",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should sign up successfully",
+              "fullTitle": "user sign up & login flow should sign up successfully",
+              "timedOut": null,
+              "duration": 3185,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://letcode.in/test\");\ncy.get('.navbar-burger').click();\ncy.xpath(\"//a[normalize-space()='Sign up']\").click();\ncy.get(\"#name\").type(\"Dinesh kolati\");\ncy.get(\"#email\").type(\"dinesh.kolati@mailinator.com\");\ncy.get(\"#pass\").type(\"Dinesh@123\");\ncy.get(\"#agree\").check();\ncy.xpath(\"//button[text()='SIGN UP']\").click();",
+              "err": {},
+              "uuid": "b688aaea-633d-466d-9f81-053fd934d3fa",
+              "parentUUID": "c643e530-2c52-469b-9c20-c5684cf4e9ad",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login",
+              "fullTitle": "user sign up & login flow Login",
+              "timedOut": null,
+              "duration": 1888,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://letcode.in/test\");\ncy.get('.navbar-burger').click();\ncy.xpath(\"//a[text()='Log in']\").click();\ncy.get(\"[name='email']\").type(\"dinesh.kolati@mailinator.com\");\ncy.get(\"[name='password']\").type(\"Dinesh@123\");\ncy.xpath(\"//button[text()='LOGIN']\").click();",
+              "err": {},
+              "uuid": "d297cd0b-7edd-4ecb-8500-e9619b92b58a",
+              "parentUUID": "c643e530-2c52-469b-9c20-c5684cf4e9ad",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Inupt section",
+              "fullTitle": "user sign up & login flow Inupt section",
+              "timedOut": null,
+              "duration": 1383,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://letcode.in/test\");\ncy.xpath(\"//a[text()='Edit']\").click();\ncy.get(\"#fullName\").type(\"Dinesh Kolati\");\ncy.get(\"#join\").clear().type(\"Done\");\ncy.get(\"#getMe\").type(\"HIIII\");",
+              "err": {},
+              "uuid": "e06b0729-95f7-4d8b-a2b6-fa69f5328af6",
+              "parentUUID": "c643e530-2c52-469b-9c20-c5684cf4e9ad",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b688aaea-633d-466d-9f81-053fd934d3fa",
+            "d297cd0b-7edd-4ecb-8500-e9619b92b58a",
+            "e06b0729-95f7-4d8b-a2b6-fa69f5328af6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6456,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

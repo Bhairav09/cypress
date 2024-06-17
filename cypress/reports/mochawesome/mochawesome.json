@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-17T10:22:33.139Z",
+    "end": "2024-06-17T10:22:36.251Z",
+    "duration": 3112,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0d588212-4cba-47c6-90d0-8464237e7204",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Assertions.cy.js",
+      "file": "cypress\\e2e\\Assertions.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "134fbd19-1101-44d6-ad7a-2f4ea640bef0",
+          "title": "Assertion Demo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "explicit assertion",
+              "fullTitle": "Assertion Demo explicit assertion",
+              "timedOut": null,
+              "duration": 759,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://example.cypress.io/commands/assertions\");\ncy.title().then(title => {\n  let title1 = \"Cypress.io: Kitchen Sink\";\n  assert.strictEqual(title1, title);\n});",
+              "err": {},
+              "uuid": "ebdd2e49-b77a-43f3-8b35-7356d87474a7",
+              "parentUUID": "134fbd19-1101-44d6-ad7a-2f4ea640bef0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ebdd2e49-b77a-43f3-8b35-7356d87474a7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 759,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

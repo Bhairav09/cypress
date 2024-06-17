@@ -1,0 +1,167 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-06-17T10:24:23.203Z",
+    "end": "2024-06-17T10:24:28.667Z",
+    "duration": 5464,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 3,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "ba18dbcc-3342-4882-8384-d99d30d9e5ac",
+      "title": "",
+      "fullFile": "cypress\\e2e\\webtable.cy.js",
+      "file": "cypress\\e2e\\webtable.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8e37a1e5-a80d-4639-8a81-a2142aa7454b",
+          "title": "Handle Tables",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check Number Rows & Columns",
+              "fullTitle": "Handle Tables Check Number Rows & Columns",
+              "timedOut": null,
+              "duration": 2848,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\webtable.cy.js\\\\Handle Tables -- Check Number Rows & Columns -- before each hook Login (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.get(\"table[class='table table-bordered table-hover']>tbody>tr\").should('have.length', '10');\ncy.get(\"table[class='table table-bordered table-hover']>thead>tr>td\").should(\"have.length\", '7');",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Invalid \"world_en\" map parameter. Please make sure you have loaded this map file in your HTML.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Handle Tables`",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Invalid \"world_en\" map parameter. Please make sure you have loaded this map file in your HTML.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Handle Tables`\n    at new JQVMap (https://demo.opencart.com/admin/view/javascript/jquery/jqvmap/jquery.vmap.js:15:198)\n    at jQuery.fn.vectorMap (https://demo.opencart.com/admin/view/javascript/jquery/jqvmap/jquery.vmap.js:29:1617)\n    at Object.success (https://demo.opencart.com/admin/index.php?route=common/dashboard&user_token=d19366c18fa4e182299fe4dfc166e600:381:24)\n    at c (https://demo.opencart.com/admin/view/javascript/jquery/jquery-3.6.0.min.js:2:28327)\n    at Object.fireWith [as resolveWith] (https://demo.opencart.com/admin/view/javascript/jquery/jquery-3.6.0.min.js:2:29072)\n    at l (https://demo.opencart.com/admin/view/javascript/jquery/jquery-3.6.0.min.js:2:79901)\n    at XMLHttpRequest.<anonymous> (https://demo.opencart.com/admin/view/javascript/jquery/jquery-3.6.0.min.js:2:82355)",
+                "diff": null
+              },
+              "uuid": "bce0229d-80a0-4369-b13a-cb4391d75ef7",
+              "parentUUID": "8e37a1e5-a80d-4639-8a81-a2142aa7454b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check cell data from specific row & Column",
+              "fullTitle": "Handle Tables Check cell data from specific row & Column",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.xpath(\"//td[text()='e@mail.com']\").contains(\"e@mail.com\");",
+              "err": {},
+              "uuid": "b58e96e8-78cb-478f-b4ea-7906ecec76a1",
+              "parentUUID": "8e37a1e5-a80d-4639-8a81-a2142aa7454b",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Read all the rows & Columns data in the first page",
+              "fullTitle": "Handle Tables Read all the rows & Columns data in the first page",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"table[class='table table-bordered table-hover']>tbody>tr\").each(($row, index, $rows) => {\n  cy.wrap($row).within(() => {\n    cy.get('td').each(($col, index, $cols) => {\n      cy.log($col.text());\n    });\n  });\n});",
+              "err": {},
+              "uuid": "44da8699-2264-4afa-aaa3-3e33947a50a8",
+              "parentUUID": "8e37a1e5-a80d-4639-8a81-a2142aa7454b",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Pagination",
+              "fullTitle": "Handle Tables Pagination",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//find total pages -logic\n/*let totalPages;\n            cy.get(\".col-sm-6.text-end\").then((e)=>{\n        let mytext=e.text();\n        totalPages=mytext.substring(mytext.indexOf(\"(\")+1,mytext.indexOf(\"Pages\")-1);\n        cy.log(\"total pages:\"+totalPages);\n    })\n\ncy.log(\"Total Number of pages====>\"+totalPages); // not working\n                      \n//find total pages - done\n*/\nlet totalPages = 5;\nfor (let p = 1; p <= totalPages; p++) {\n  if (totalPages > 1)\n    //if(parseInt(totalPages)>1)\n    {\n      cy.log(\"Active page====>:\" + p);\n      cy.get(\"ul[class='pagination']>li:nth-child(\" + p + \")\").click();\n      cy.wait(3000);\n      cy.get(\"table[class='table table-bordered table-hover']>tbody>tr\").each(($row, indiex, $rows) => {\n        cy.wrap($row).within(() => {\n          cy.get('td:nth-child(3)').then(e => {\n            cy.log(e.text()); //Email\n          });\n        });\n      });\n    }\n}",
+              "err": {},
+              "uuid": "81b1ad5c-bac4-424d-aed5-e0868aaa985b",
+              "parentUUID": "8e37a1e5-a80d-4639-8a81-a2142aa7454b",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "bce0229d-80a0-4369-b13a-cb4391d75ef7"
+          ],
+          "pending": [],
+          "skipped": [
+            "b58e96e8-78cb-478f-b4ea-7906ecec76a1",
+            "44da8699-2264-4afa-aaa3-3e33947a50a8",
+            "81b1ad5c-bac4-424d-aed5-e0868aaa985b"
+          ],
+          "duration": 2848,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
