@@ -14,7 +14,7 @@ describe('Handle Tables',(()=>{
         cy.xpath("(//a[text()='Customers'])[1]").click();
   
     })
-
+    
     it('Check Number Rows & Columns',()=>{
        
       cy.get("table[class='table table-bordered table-hover']>tbody>tr").should('have.length','10');
