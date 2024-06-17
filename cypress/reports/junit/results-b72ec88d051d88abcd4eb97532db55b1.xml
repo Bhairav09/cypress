@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="36.123" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-06-17T12:10:34" tests="0" file="cypress\e2e\webtable.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Handle Tables" timestamp="2024-06-17T12:10:34" tests="4" time="36.119" failures="0">
+    <testcase name="Handle Tables Check Number Rows &amp; Columns" time="7.981" classname="Check Number Rows &amp; Columns">
+    </testcase>
+    <testcase name="Handle Tables Check cell data from specific row &amp; Column" time="2.013" classname="Check cell data from specific row &amp; Column">
+    </testcase>
+    <testcase name="Handle Tables Read all the rows &amp; Columns data in the first page" time="2.684" classname="Read all the rows &amp; Columns data in the first page">
+    </testcase>
+    <testcase name="Handle Tables Pagination" time="20.450" classname="Pagination">
+    </testcase>
+  </testsuite>
+</testsuites>

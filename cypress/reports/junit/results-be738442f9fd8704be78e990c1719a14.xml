@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="8.626" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-06-17T12:10:00" tests="0" file="cypress\e2e\letcode.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="user sign up &amp; login flow" timestamp="2024-06-17T12:10:00" tests="3" time="8.620" failures="0">
+    <testcase name="user sign up &amp; login flow should sign up successfully" time="3.506" classname="should sign up successfully">
+    </testcase>
+    <testcase name="user sign up &amp; login flow Login" time="1.588" classname="Login">
+    </testcase>
+    <testcase name="user sign up &amp; login flow Inupt section" time="1.352" classname="Inupt section">
+    </testcase>
+  </testsuite>
+</testsuites>
