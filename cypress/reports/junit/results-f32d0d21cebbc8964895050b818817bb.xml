@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="5.674" tests="4" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-06-17T12:44:06" tests="0" file="cypress\e2e\webtable.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Handle Tables" timestamp="2024-06-17T12:44:06" tests="4" time="5.669" failures="1">
+    <testcase name="Handle Tables &quot;before each&quot; hook: Login for &quot;Check Number Rows &amp; Columns&quot;" time="0.000" classname="&quot;before each&quot; hook: Login for &quot;Check Number Rows &amp; Columns&quot;">
+      <failure message="The following error originated from your application code, not from Cypress.
+
+  &gt; Cannot read properties of undefined (reading &apos;plugins&apos;)
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Handle Tables`" type="TypeError"><![CDATA[TypeError: The following error originated from your application code, not from Cypress.
+
+  > Cannot read properties of undefined (reading 'plugins')
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Handle Tables`
+    at <unknown> (https://demo.opencart.com/admin/view/javascript/jquery/flot/jquery.flot.resize.min.js:19:1134)
+    at <unknown> (https://demo.opencart.com/admin/view/javascript/jquery/flot/jquery.flot.resize.min.js:19:1195)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
