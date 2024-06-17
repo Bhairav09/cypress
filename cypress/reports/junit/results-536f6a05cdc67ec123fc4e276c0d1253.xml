@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="19.103" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-06-17T13:40:56" tests="0" file="cypress\e2e\dropdowns.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="static dropdown" timestamp="2024-06-17T13:40:56" tests="2" time="19.100" failures="0">
+    <testcase name="static dropdown Dropdown with select" time="5.001" classname="Dropdown with select">
+    </testcase>
+    <testcase name="static dropdown Dynamic dropdown" time="9.460" classname="Dynamic dropdown">
+    </testcase>
+  </testsuite>
+</testsuites>
