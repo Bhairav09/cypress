@@ -11,6 +11,7 @@
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.40.2",
     "cypress": "^13.11.0",
+    "cypress-html-reporter": "^11.0.0",
     "cypress-mochawesome-reporter": "^3.8.2",
     "cypress-teamcity-reporter": "^4.0.0",
     "cypress-xpath": "^2.0.1",
