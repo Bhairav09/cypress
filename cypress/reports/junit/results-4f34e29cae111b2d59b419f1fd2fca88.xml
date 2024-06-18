@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="4.465" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2024-06-17T12:40:44" tests="0" file="cypress\e2e\radioandchekboxes.cy.js" time="0.000" failures="0">
-  </testsuite>
-  <testsuite name="Check UI elements" timestamp="2024-06-17T12:40:44" tests="1" time="4.460" failures="0">
-    <testcase name="Check UI elements checking radio button" time="2.192" classname="checking radio button">
-    </testcase>
-  </testsuite>
-</testsuites>
