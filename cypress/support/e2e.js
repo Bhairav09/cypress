@@ -18,7 +18,7 @@ import './commands'
 // cypress/support/e2e.js
 import 'cypress-mochawesome-reporter/register';
 // cypress/support/e2e.ssss
-import '@shelex/cypress-allure-plugin';
+// import '@shelex/cypress-allure-plugin';
 
 
 // Alternatively you can use CommonJS syntax:

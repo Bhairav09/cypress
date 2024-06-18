@@ -17,22 +17,27 @@ module.exports = {
     overwrite: false,
     html: false,
     json: true
-  }
-}
-
-
-// cypress.config.js
-const allureWriter = require('@shelex/cypress-allure-plugin/writer');
-
-module.exports = {
-  reporter: 'junit',
-  reporterOptions: {
-    mochaFile: 'cypress/reports/junit/results-[hash].xml'
   },
   e2e: {
     setupNodeEvents(on, config) {
-      allureWriter(on, config);
-      return config;
-    }
+      // implement node event listeners here
+    },
   }
 }
+
+
+// // cypress.config.js
+// const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+
+// module.exports = {
+//   reporter: 'junit',
+//   reporterOptions: {
+//     mochaFile: 'cypress/reports/junit/results-[hash].xml'
+//   },
+//   e2e: {
+//     setupNodeEvents(on, config) {
+//       allureWriter(on, config);
+//       return config;
+//     }
+//   }
+// }
